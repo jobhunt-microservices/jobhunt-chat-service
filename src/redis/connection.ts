@@ -5,7 +5,7 @@ import { getErrorMessage } from '@jobhunt-microservices/jobhunt-shared';
 import { createClient } from 'redis';
 
 type RedisClient = ReturnType<typeof createClient>;
-const log = logger('gigRedisConnection', 'debug');
+const log = logger('chatRedisConnection', 'debug');
 
 const client: RedisClient = createClient({ url: `${config.REDIS_HOST}` });
 
